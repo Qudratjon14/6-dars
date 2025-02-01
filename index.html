@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacega Xush Kelibsiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="image 2.png" alt="MARS Logo" width="100">
+        <div class="lang-switch" onclick="toggleLanguage()">
+            <span id="lang-btn">🌐 O'zб</span>
+        </div>
+    </header>
+    <div class="advertisement"></div>
+    <div class="container">
+        <div class="login-box">
+            <a href="#" class="offer-link" id="offer-text">Offerta imzolash <img src="Vector.png" alt="Exit"></a>
+            <h2 id="welcome-text">Spacega xush kelibsiz</h2>
+            <div class="role-switch">
+                <button id="student" class="active" onclick="switchRole(this)">O'quvchiman</button>
+                <button id="parent" onclick="switchRole(this)">Ota-onaman</button>
+            </div>
+            <input type="text" id="user-id" placeholder="Modme Id or Phone number">
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Password">
+                <span class="toggle-password" onclick="togglePassword()">👁️</span>
+            </div>
+            <a href="#" id="qr-text">QR code orqali kirish</a>
+            <button class="confirm" onclick="submitForm()" id="confirm-text">Подвердить</button>
+        </div>
+        <div class="profile-info" id="profile-info">
+            <h3 id="profile-title">Profil ma'lumotlari</h3>
+            <p><strong>Ism:</strong> Qudrat</p>
+            <p><strong>Id:</strong> 2972</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
